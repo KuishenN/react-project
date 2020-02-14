@@ -25,6 +25,7 @@ const App = (props) => {
       {/**jsx语法中使用一个花括号编写我们的js代码 */}
       <h1 title={props.title}>Welcome {props.title}</h1>
       <p>优秀的{props.title}</p>
+      <h1></h1>
     </div>
   )
 }

@@ -38,7 +38,7 @@
          -  获取状态数据返回对象`getDerivedStateFromProps`
          -  获取真实的DOM: `componentDidMount(获取ajax), 为了尽快渲染页面`
 
-       - 更新 `props发生变化 state发生变化`
+       - 触发组件的更新 `props发生变化 state发生变化 forceUpdate`
        - 卸载 `componentWillUnmount`
      - component和PureComponent的区别
        - `PureComponent` 在生命周期shouldComponentUpdate中做了一层浅比较

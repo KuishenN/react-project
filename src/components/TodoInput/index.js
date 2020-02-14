@@ -18,7 +18,7 @@ export default class TodoInput extends Component {
     // 3. 最好的实现方式, 父组件定义 子组件传参的方式
     handleAddClick = () => {
       // this中函数的执行为什么指向undefined
-      if (this.state.inputValue.trim() ==  '') {
+      if (this.state.inputValue.trim() === '') {
         return 
       }
       this.props.addTodo(this.state.inputValue)
