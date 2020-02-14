@@ -21,11 +21,26 @@ export default class App extends Component {
       ]
     }
   }
+
   addTodo = (title) => {
     this.setState({
       todos: [...this.state.todos, {id: Math.random(), title, isCompleted: false}]
     })
   }
+
+  onCompleted = (id) => {
+    console.log('onCompleted', id)
+    this.setState({
+      todos: this.state.todos.map(todo => {
+        if (todo.id === id) {
+          todo.isCompleted = !todo.isCompleted
+        }
+        return todo
+      })
+    })
+   
+  }
+
   render() {
     return (
       <>
@@ -33,7 +48,7 @@ export default class App extends Component {
           {this.state.title}
         </TodoHeader>
         <TodoInput addTodo={this.addTodo} />
-        <TodoList todos={this.state.todos}/>
+        <TodoList todos={this.state.todos} onCompleted={this.onCompleted}/>
         <Like/>
       </>
     )
