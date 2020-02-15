@@ -52,4 +52,17 @@
 
      - MVC
      - redux原理
+  
+  15 路由(react-router)
+
+    - Router 只有一个 HashRouter BrowserRouter
+    - Route 单个组件路由表  exact render函数渲染(主要用于组件传递参数)
+       - 路由传参的方式 1. query(?拼接路径)  2. 动态理由 match.params  3 state 隐式传参 在location.search
+          - 埋点方式 1. ajax 2. img地址带参数  3.sendBeacon 4. 路由 state传递参数
+         
+    - Link Route的路径匹配
+    - redirect 重定向
+    - Switch 路由匹配
+    - withRouter 只用使用Route渲染的组件才具有路由的一些API, 其他的组件我们使用withRouter高阶组件来渲染
+
 
