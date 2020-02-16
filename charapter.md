@@ -45,8 +45,11 @@
   12. 跨组件通信 `context` 适用于小型项目
      
   
-  13. HOC: 高阶组件
+  13. HOC: 高阶组件(Hight-Order Component)
        - 函数式组件 (函数柯理化(闭包实现), AOP 函数式编程)， 可以实现组件劫持
+       - 使用装饰器 对webpack进行扩展 `react-app-rewired`, 在package.json中scripts配置'react-app-rewired'
+       - 使用装饰器默认` customize-cra`, 然后使用customize-cra中的override方法进行配置, '@babel/plugin-proposal-decorators'
+       - Vue更加官方化(vue的配置都是webpack的官方API), React更加社区化(React的使用的插件更多的是社区提供的)
 
   14. 状态管理(redux)
 
@@ -63,6 +66,15 @@
     - Link Route的路径匹配
     - redirect 重定向
     - Switch 路由匹配
-    - withRouter 只用使用Route渲染的组件才具有路由的一些API, 其他的组件我们使用withRouter高阶组件来渲染
+    - withRouter 只用使用Route渲染的组件才具有路由的一些API, 其他的组件我们使用
+    - withRouter高阶组件来渲染
+
+  16. ReactHooks源码实现
+
+  17. React源码实现
+
+  18. ReactRouter源码实现
+
+  19. Redux实现
 
 
