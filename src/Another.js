@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import withCopyRight  from './withCopyRight'
+
 @withCopyRight
 class Another extends Component {
   render() {
